@@ -1,6 +1,8 @@
 #include<iostream>
-
 using namespace std;
+
+template<typename why>
+why mySwap(why&,why&); 
 
 int main(){
 	int x, y;
@@ -30,3 +32,10 @@ int main(){
 	return 0;
 }
 
+template<typename why>
+why mySwap(why &x,why &y){
+why z=y;
+	y=x;
+	x=z;
+return z;
+}
